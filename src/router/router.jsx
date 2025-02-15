@@ -10,6 +10,7 @@ import TutorFrom from "../pages/gurdian/TutorFrom";
 import GurdianProfile from "../pages/gurdian/gurdian-profile-page/GurdianProfile";
 import ProfileLayout from "../layout/ProfileLayout";
 import ContactInformation from "../pages/gurdian/gurdian-profile-page/ContactInformation";
+import AdditionalDetails from "../pages/gurdian/gurdian-profile-page/AdditionalDetails";
 
 export const router = createBrowserRouter([
     {
@@ -65,7 +66,7 @@ export const router = createBrowserRouter([
                     },
                     {
                         path: "addictional-info",
-                        element: <div>adictional inof information</div>
+                        element: <AdditionalDetails></AdditionalDetails>
                     },
 
                 ]

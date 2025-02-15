@@ -2,7 +2,7 @@ import React from 'react'
 
 const TutorFrom = () => {
     return (
-        <div className='flex lg:gap-12   ' >
+        <div className='flex lg:gap-12 h-[80vh] overflow-y-scroll  ' >
             <div>
                 <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1739631555/10716587_4544309_1_gbsppz.png" alt="" />
             </div>
@@ -42,7 +42,7 @@ const TutorFrom = () => {
                         <label className="block text-gray-700">Tutoring Time*</label>
                         <input type="text" className="w-full p-1 border rounded-md" placeholder="05:00PM" />
                     </div>
-                    <button className="px-5 bg-[#64A8E8] text-white py-2 rounded-md ">Continue →</button>
+                    <button className="px-5 my-3 bg-[#64A8E8] text-white py-2 rounded-md ">Continue →</button>
                 </form>
             </div>
         </div>
