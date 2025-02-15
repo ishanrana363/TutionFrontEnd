@@ -5,6 +5,7 @@ import SuperAdminLayout from "../layout/SuperAdminLayout";
 import SuperAdminHomePage from "../pages/super-admin/SuperAdminHomePage";
 import JobRequest from './../pages/super-admin/JobRequest';
 import TeacherTable from "../pages/super-admin/TeacherTable";
+import HomePage from "../pages/gurdian/HomePage";
 
 export const router = createBrowserRouter([
     {
@@ -43,7 +44,7 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <div> <p> lorem</p> </div>
+                element: <HomePage></HomePage>
             },
             {
                 path:"tutor-request",
