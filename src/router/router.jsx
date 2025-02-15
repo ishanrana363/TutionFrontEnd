@@ -3,6 +3,7 @@ import TutorLayout from "../layout/TutorLayout";
 import GurdianLayout from "../layout/GurdianLayout";
 import SuperAdminLayout from "../layout/SuperAdminLayout";
 import SuperAdminHomePage from "../pages/super-admin/SuperAdminHomePage";
+import JobRequest from './../pages/super-admin/JobRequest';
 
 export const router = createBrowserRouter([
     {
@@ -75,7 +76,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:"job-request",
-                element : <div>tutor-request</div>
+                element : <JobRequest></JobRequest>
             },
             {
                 path:"total-teacher",

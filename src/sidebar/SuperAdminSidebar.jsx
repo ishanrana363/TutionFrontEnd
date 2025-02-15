@@ -1,7 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const SuperAdminSidebar = () => {
+    const location = useLocation();
+    const pathname = location.pathname;
     return (
         <div className="px-[17px] h-[90vh]  shadow bg-[#F1F8FF] py-6">
             <nav>
@@ -16,8 +18,8 @@ const SuperAdminSidebar = () => {
                         <li key={path}>
                             <NavLink
                                 to={path}
-                                className={({ isActive }) =>
-                                    `flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm transition ${isActive
+                                className={
+                                    `flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm transition ${pathname===path
                                         ? "bg-[#FFFFFF] shadow text-[#64A8E8] font-semibold"
                                         : "text-gray-700"
                                     }`

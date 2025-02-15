@@ -12,7 +12,7 @@ const SuperAdminLayout = () => {
                 <div className='w-[20%]  '  >
                     <SuperAdminSidebar></SuperAdminSidebar>
                 </div>
-                <div className='w-[84%] ml-8 ' >
+                <div className='w-[84%] px-2 py-2 ' >
                     <Outlet></Outlet>
                 </div>
             </div>
