@@ -6,6 +6,9 @@ import SuperAdminHomePage from "../pages/super-admin/SuperAdminHomePage";
 import JobRequest from './../pages/super-admin/JobRequest';
 import TeacherTable from "../pages/super-admin/TeacherTable";
 import HomePage from "../pages/gurdian/HomePage";
+import TutorFrom from "../pages/gurdian/TutorFrom";
+import GurdianProfile from "../pages/gurdian/gurdian-profile-page/GurdianProfile";
+import ProfileLayout from "../layout/ProfileLayout";
 
 export const router = createBrowserRouter([
     {
@@ -17,24 +20,24 @@ export const router = createBrowserRouter([
                 element: <div> <p> lorem</p> </div>
             },
             {
-                path:"job-board",
-                element : <div>job board</div>
+                path: "job-board",
+                element: <div>job board</div>
             },
             {
-                path:"profile",
-                element : <div>Profile</div>
+                path: "profile",
+                element: <div>Profile</div>
             },
             {
-                path:"payment",
-                element : <div>Payment</div>
+                path: "payment",
+                element: <div>Payment</div>
             },
             {
-                path:"notice",
-                element : <div>notice</div>
+                path: "notice",
+                element: <div>notice</div>
             },
             {
-                path:"setting",
-                element : <div>Setting</div>
+                path: "setting",
+                element: <div>Setting</div>
             }
         ]
     },
@@ -47,42 +50,55 @@ export const router = createBrowserRouter([
                 element: <HomePage></HomePage>
             },
             {
-                path:"tutor-request",
-                element : <div>tutor request</div>
+                path: "tutor-request",
+                element: <TutorFrom></TutorFrom>
             },
             {
-                path:"profile",
-                element : <div>Profile</div>
+                path: "profile",
+                element: <ProfileLayout></ProfileLayout>,
+                children: [
+
+                    {
+                        path: "",
+                        element: <div>personal information</div>
+                    },
+                    {
+                        path: "addictional-info",
+                        element: <div>adictional inof information</div>
+                    },
+
+                ]
+            },
+
+            {
+                path: "post-job",
+                element: <div>post-job</div>
             },
             {
-                path:"post-job",
-                element : <div>post-job</div>
+                path: "notice",
+                element: <div>notice</div>
             },
             {
-                path:"notice",
-                element : <div>notice</div>
-            },
-            {
-                path:"setting",
-                element : <div>Setting</div>
+                path: "setting",
+                element: <div>Setting</div>
             }
         ]
     },
     {
-        path : "/super-admin-dashboard",
-        element : <SuperAdminLayout></SuperAdminLayout>,
-        children : [
+        path: "/super-admin-dashboard",
+        element: <SuperAdminLayout></SuperAdminLayout>,
+        children: [
             {
-                path:"",
-                element : <SuperAdminHomePage></SuperAdminHomePage>
+                path: "",
+                element: <SuperAdminHomePage></SuperAdminHomePage>
             },
             {
-                path:"job-request",
-                element : <JobRequest></JobRequest>
+                path: "job-request",
+                element: <JobRequest></JobRequest>
             },
             {
-                path:"total-teacher",
-                element : <TeacherTable></TeacherTable>
+                path: "total-teacher",
+                element: <TeacherTable></TeacherTable>
             }
         ]
     }

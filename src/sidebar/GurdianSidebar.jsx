@@ -1,7 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const GurdianSidebar = () => {
+    const location = useLocation();
+    const pathname = location.pathname;
+    
     return (
         <div className="px-[17px] overflow-y-scroll bg-[#F1F8FF] py-6">
             <nav>
@@ -19,7 +22,7 @@ const GurdianSidebar = () => {
                             <NavLink
                                 to={path}
                                 className={({ isActive }) =>
-                                    `flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm transition ${isActive
+                                    `flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm transition ${pathname==path
                                         ? "bg-[#FFFFFF] shadow text-[#64A8E8] font-semibold"
                                         : "text-gray-700"
                                     }`
@@ -28,7 +31,7 @@ const GurdianSidebar = () => {
                                 <img
                                     src={`https://res.cloudinary.com/dj2edy2rg/image/upload/v1739602048/tutor-bridge/${icon}.png`}
                                     alt={`${label} Icon`}
-                                    className="w-5 h-5   transition"
+                                    className={`w-5 h-5   transition ${pathname==path} ? "  " `}
                                     style={{ filter: "brightness(0) saturate(100%)" }}
                                 />
                                 <span>{label}</span>

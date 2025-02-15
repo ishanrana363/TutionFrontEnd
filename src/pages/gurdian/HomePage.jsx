@@ -40,9 +40,6 @@ const HomePage = () => {
                     <p className="text-[#64A8E8] text-[20px] font-semibold ">Cancel Jobs</p>
                 </div>
             </div>
-
-
-
             <div className="my-10" >
                 <div>
                     <h1 className="text-[#64A8E8] font-bold text-3xl " >Profile</h1>
