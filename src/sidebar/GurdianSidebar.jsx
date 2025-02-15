@@ -1,19 +1,19 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const TutorSidebar = () => {
+const GurdianSidebar = () => {
     return (
         <div className="px-[17px] overflow-y-scroll bg-[#F1F8FF] py-6">
             <nav>
                 <ul>
                     {/** Sidebar Menu Items */}
                     {[
-                        { path: "/tutor-dashboard", label: "Dashboard", icon: "hiqksqdoynppnq0omfcx" },
-                        { path: "/tutor-dashboard/job-board", label: "Job Board", icon: "jqous4irxwpncr90ux30" },
-                        { path: "/tutor-dashboard/profile", label: "Profile", icon: "jqous4irxwpncr90ux30" },
-                        { path: "/tutor-dashboard/payment", label: "Payment", icon: "mhy6vcoqqiuwey029qrz" },
-                        { path: "/tutor-dashboard/notice", label: "Important Notice", icon: "ma1jum6tusg2bkluqn4x" },
-                        { path: "/tutor-dashboard/setting", label: "Setting", icon: "wkpj6ilzkyvuko0stdct" },
+                        { path: "/gurdian-dashboard", label: "Dashboard", icon: "hiqksqdoynppnq0omfcx" },
+                        { path: "/gurdian-dashboard/tutor-request", label: "Tutor Request", icon: "jqous4irxwpncr90ux30" },
+                        { path: "/gurdian-dashboard/profile", label: "Profile", icon: "jqous4irxwpncr90ux30" },
+                        { path: "/gurdian-dashboard/post-job", label: "Posted Jobs", icon: "mhy6vcoqqiuwey029qrz" },
+                        { path: "/gurdian-dashboard/notice", label: "Important Notice", icon: "ma1jum6tusg2bkluqn4x" },
+                        { path: "/gurdian-dashboard/setting", label: "Setting", icon: "wkpj6ilzkyvuko0stdct" },
                     ].map(({ path, label, icon }) => (
                         <li key={path}>
                             <NavLink
@@ -56,4 +56,4 @@ const TutorSidebar = () => {
     );
 };
 
-export default TutorSidebar;
+export default GurdianSidebar;
