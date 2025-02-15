@@ -10,7 +10,7 @@ const GurdianLayout = () => {
                 <div className='w-[20%]  '  >
                     <GurdianSidebar></GurdianSidebar>
                 </div>
-                <div className='w-[84%]' >
+                <div className='w-[84%] ml-4 ' >
                     <Outlet></Outlet>
                 </div>
             </div>

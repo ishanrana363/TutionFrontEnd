@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import TutorLayout from "../layout/TutorLayout";
 import GurdianLayout from "../layout/GurdianLayout";
 import SuperAdminLayout from "../layout/SuperAdminLayout";
+import SuperAdminHomePage from "../pages/super-admin/SuperAdminHomePage";
 
 export const router = createBrowserRouter([
     {
@@ -70,7 +71,7 @@ export const router = createBrowserRouter([
         children : [
             {
                 path:"",
-                element : <div>home page</div>
+                element : <SuperAdminHomePage></SuperAdminHomePage>
             },
             {
                 path:"job-request",
