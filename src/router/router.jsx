@@ -4,6 +4,7 @@ import GurdianLayout from "../layout/GurdianLayout";
 import SuperAdminLayout from "../layout/SuperAdminLayout";
 import SuperAdminHomePage from "../pages/super-admin/SuperAdminHomePage";
 import JobRequest from './../pages/super-admin/JobRequest';
+import TeacherTable from "../pages/super-admin/TeacherTable";
 
 export const router = createBrowserRouter([
     {
@@ -80,7 +81,7 @@ export const router = createBrowserRouter([
             },
             {
                 path:"total-teacher",
-                element : <div>total teacher</div>
+                element : <TeacherTable></TeacherTable>
             }
         ]
     }

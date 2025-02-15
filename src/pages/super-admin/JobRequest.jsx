@@ -185,13 +185,13 @@ const JobRequest = () => {
                 />
                 <button
                     onClick={handleSearch}
-                    className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+                    className="px-4 py-2 bg-[#F1F8FF]  rounded-md text-black "
                 >
                     Search
                 </button>
             </div>
 
-            <div className="overflow-x-scroll overflow-y-scroll p-2">
+            <div className="overflow-x-scroll overflow-y-scroll p-2 h-[60vh] ">
                 <table className="min-w-full border text-sm border-gray-300 shadow-md rounded-lg">
                     <thead>
                         <tr className="bg-gray-200 text-gray-700">
@@ -205,6 +205,7 @@ const JobRequest = () => {
                             <th className="p-3 text-left">Tutoring Time</th>
                             <th className="p-3 text-left">Preferred Tutor</th>
                             <th className="p-3 text-left">Date</th>
+                            <th className="p-3 text-left">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -220,17 +221,23 @@ const JobRequest = () => {
                                 <td className="p-3">{item.tutoringTime}</td>
                                 <td className="p-3">{item.preferredTutor}</td>
                                 <td className="p-3">{item.date}</td>
+                                <td className="p-3 cursor-pointer ">...</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
             </div>
+            {
+                currentData.length<0 && (
+                    <h1>Data not found</h1>
+                )
+            }
 
             <div className="flex justify-end items-center mt-4">
                 <button
                     onClick={() => handlePageChange(currentPage - 1)}
                     disabled={currentPage === 1}
-                    className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 disabled:bg-gray-300"
+                    className="px-4 py-2 bg-[#F1F8FF]  rounded-md text-black    disabled:bg-gray-300"
                 >
                     Previous
                 </button>
@@ -240,7 +247,7 @@ const JobRequest = () => {
                 <button
                     onClick={() => handlePageChange(currentPage + 1)}
                     disabled={currentPage === totalPages}
-                    className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 disabled:bg-gray-300"
+                    className="px-4 py-2 bg-[#F1F8FF]  rounded-md text-black    disabled:bg-gray-300"
                 >
                     Next
                 </button>
