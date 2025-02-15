@@ -1,6 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import TutorLayout from "../layout/TutorLayout";
 import GurdianLayout from "../layout/GurdianLayout";
+import SuperAdminLayout from "../layout/SuperAdminLayout";
 
 export const router = createBrowserRouter([
     {
@@ -60,6 +61,24 @@ export const router = createBrowserRouter([
             {
                 path:"setting",
                 element : <div>Setting</div>
+            }
+        ]
+    },
+    {
+        path : "/super-admin-dashboard",
+        element : <SuperAdminLayout></SuperAdminLayout>,
+        children : [
+            {
+                path:"",
+                element : <div>home page</div>
+            },
+            {
+                path:"job-request",
+                element : <div>tutor-request</div>
+            },
+            {
+                path:"total-teacher",
+                element : <div>total teacher</div>
             }
         ]
     }
