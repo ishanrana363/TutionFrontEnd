@@ -4,13 +4,15 @@ import { MdVerified, MdLock } from "react-icons/md";
 import NameUpdate from "../../../components/gurdian-setting/NameUpdate";
 import PhoneNumberUpdate from "../../../components/gurdian-setting/PhoneNumberUpdate";
 import PasswordUpdate from "../../../components/gurdian-setting/PasswordUpdate";
+import VerifyAccount from "../../../components/gurdian-setting/VerifyAccount";
+import EditProfile from "../../../components/gurdian-setting/EditProfile";
 
 const tabs = [
     { name: "Name", icon: <FaUser />, key: "name" },
     { name: "Number", icon: <FaPhone />, key: "number" },
     { name: "Password", icon: <FaLock />, key: "password" },
     { name: "Verification", icon: <MdVerified />, key: "verification" },
-    { name: "Profile Lock", icon: <MdLock />, key: "profile_lock" },
+    { name: "Edit Profile", icon: <FaUser />, key: "profile_lock" },
 ];
 
 export default function Setting() {
@@ -60,19 +62,13 @@ export default function Setting() {
 
                 {activeTab === "verification" && (
                     <div>
-                        <h2 className="text-xl font-semibold text-[#141414] mb-4">Verify Your Account</h2>
-                        <button className="mt-4 font-medium px-4 py-2 bg-green-500 text-white rounded-md flex items-center space-x-2">
-                            Send Verification Code
-                        </button>
+                        <VerifyAccount></VerifyAccount>
                     </div>
                 )}
 
                 {activeTab === "profile_lock" && (
                     <div>
-                        <h2 className="text-xl font-semibold text-[#141414] mb-4">Enable Profile Lock</h2>
-                        <button className="mt-4 font-medium px-4 py-2 bg-red-500 text-white rounded-md flex items-center space-x-2">
-                            Enable Lock
-                        </button>
+                        <EditProfile></EditProfile>
                     </div>
                 )}
             </div>
