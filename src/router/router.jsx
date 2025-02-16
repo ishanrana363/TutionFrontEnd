@@ -11,6 +11,7 @@ import GurdianProfile from "../pages/gurdian/gurdian-profile-page/GurdianProfile
 import ProfileLayout from "../layout/ProfileLayout";
 import ContactInformation from "../pages/gurdian/gurdian-profile-page/ContactInformation";
 import AdditionalDetails from "../pages/gurdian/gurdian-profile-page/AdditionalDetails";
+import PostedJobPage from "../pages/gurdian/posted-jon/PostedJobPage";
 
 export const router = createBrowserRouter([
     {
@@ -74,7 +75,7 @@ export const router = createBrowserRouter([
 
             {
                 path: "post-job",
-                element: <div>post-job</div>
+                element: <PostedJobPage></PostedJobPage>
             },
             {
                 path: "notice",

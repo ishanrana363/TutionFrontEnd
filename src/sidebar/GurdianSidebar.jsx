@@ -4,6 +4,9 @@ import { NavLink, useLocation } from "react-router-dom";
 const GurdianSidebar = () => {
     const location = useLocation();
     const pathname = location.pathname;
+    const handleLogout = ()=>{
+        alert("logout successfully")
+    }
     
     return (
         <div className="px-[17px] overflow-y-scroll bg-[#F1F8FF] py-6">
@@ -41,7 +44,7 @@ const GurdianSidebar = () => {
 
                     {/** Logout Button */}
                     <li>
-                        <NavLink
+                        <span
                             to=""
                             className="flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm text-[#CA4A4A] font-semibold"
                         >
@@ -50,8 +53,8 @@ const GurdianSidebar = () => {
                                 alt="Logout Icon"
                                 className="w-5 h-5"
                             />
-                            <span>Logout</span>
-                        </NavLink>
+                            <span onClick={handleLogout} className=" cursor-pointer " >Logout</span>
+                        </span>
                     </li>
                 </ul>
             </nav>
