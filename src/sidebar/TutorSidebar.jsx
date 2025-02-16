@@ -1,7 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 const TutorSidebar = () => {
+    const location = useLocation();
+    const pathName = location.pathname;
     return (
         <div className="px-[17px] overflow-y-scroll bg-[#F1F8FF] py-6">
             <nav>
@@ -19,7 +21,7 @@ const TutorSidebar = () => {
                             <NavLink
                                 to={path}
                                 className={({ isActive }) =>
-                                    `flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm transition ${isActive
+                                    `flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm transition ${pathName===path
                                         ? "bg-[#FFFFFF] shadow text-[#64A8E8] font-semibold"
                                         : "text-gray-700"
                                     }`
@@ -38,7 +40,7 @@ const TutorSidebar = () => {
 
                     {/** Logout Button */}
                     <li>
-                        <NavLink
+                        <span
                             to=""
                             className="flex items-center gap-4 my-6 px-[16px] py-[11px] rounded-sm text-[#CA4A4A] font-semibold"
                         >
@@ -48,7 +50,7 @@ const TutorSidebar = () => {
                                 className="w-5 h-5"
                             />
                             <span>Logout</span>
-                        </NavLink>
+                        </span>
                     </li>
                 </ul>
             </nav>

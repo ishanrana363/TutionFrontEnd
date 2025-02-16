@@ -17,8 +17,6 @@ const tabs = [
 
 export default function Setting() {
     const [activeTab, setActiveTab] = useState("name");
-    const [name, setName] = useState("Fahim");
-    const [number, setNumber] = useState("+1234567890");
 
     return (
         <>
@@ -29,7 +27,7 @@ export default function Setting() {
                         <button
                             key={tab.key}
                             onClick={() => setActiveTab(tab.key)}
-                            className={`flex items-center space-x-2 px-6 py-3 rounded-lg transition-all duration-300 ${activeTab === tab.key
+                            className={`flex items-center space-x-2 px-10 py-5 rounded-lg transition-all duration-300 ${activeTab === tab.key
                                 ? "bg-gradient-to-r from-[#07569E] to-[#0093DD] text-white"
                                 : "bg-white shadow text-[#64A8E8]"
                                 }`}
