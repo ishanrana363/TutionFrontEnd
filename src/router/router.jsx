@@ -12,6 +12,8 @@ import ProfileLayout from "../layout/ProfileLayout";
 import ContactInformation from "../pages/gurdian/gurdian-profile-page/ContactInformation";
 import AdditionalDetails from "../pages/gurdian/gurdian-profile-page/AdditionalDetails";
 import PostedJobPage from "../pages/gurdian/posted-jon/PostedJobPage";
+import Notice from "../pages/gurdian/notice-page/Notice";
+import Setting from "../pages/gurdian/setting-page/Setting";
 
 export const router = createBrowserRouter([
     {
@@ -79,11 +81,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "notice",
-                element: <div>notice</div>
+                element: <Notice></Notice>
             },
             {
                 path: "setting",
-                element: <div>Setting</div>
+                element: <Setting></Setting>
             }
         ]
     },
