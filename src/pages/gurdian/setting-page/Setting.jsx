@@ -3,6 +3,7 @@ import { FaUser, FaPhone, FaLock } from "react-icons/fa";
 import { MdVerified, MdLock } from "react-icons/md";
 import NameUpdate from "../../../components/gurdian-setting/NameUpdate";
 import PhoneNumberUpdate from "../../../components/gurdian-setting/PhoneNumberUpdate";
+import PasswordUpdate from "../../../components/gurdian-setting/PasswordUpdate";
 
 const tabs = [
     { name: "Name", icon: <FaUser />, key: "name" },
@@ -53,15 +54,7 @@ export default function Setting() {
 
                 {activeTab === "password" && (
                     <div>
-                        <h2 className="text-xl font-semibold text-[#141414] mb-4">Change Password</h2>
-                        <input
-                            type="password"
-                            placeholder="New Password"
-                            className="w-full px-3 py-2 focus:outline-none border-none bg-white rounded-md"
-                        />
-                        <button className="mt-4 font-medium px-4 py-2 bg-[#64A8E8] text-white rounded-md flex items-center space-x-2">
-                            Update →
-                        </button>
+                        <PasswordUpdate></PasswordUpdate>
                     </div>
                 )}
 
