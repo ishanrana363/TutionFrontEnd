@@ -14,6 +14,8 @@ import AdditionalDetails from "../pages/gurdian/gurdian-profile-page/AdditionalD
 import PostedJobPage from "../pages/gurdian/posted-jon/PostedJobPage";
 import Notice from "../pages/gurdian/notice-page/Notice";
 import Setting from "../pages/gurdian/setting-page/Setting";
+import TutorHome from "../pages/tutor/TutorHome";
+import TuitionType from "../pages/tutor/tuition-type/TuitionType";
 
 export const router = createBrowserRouter([
     {
@@ -22,11 +24,11 @@ export const router = createBrowserRouter([
         children: [
             {
                 path: "",
-                element: <div> <p> lorem</p> </div>
+                element: <TutorHome></TutorHome>
             },
             {
                 path: "job-board",
-                element: <div>job board</div>
+                element: <TuitionType></TuitionType>
             },
             {
                 path: "profile",

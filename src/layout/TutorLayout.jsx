@@ -12,7 +12,9 @@ const TutorLayout = () => {
                     <TutorSidebar></TutorSidebar>
                 </div>
                 <div className='w-[84%]' >
-                    <Outlet></Outlet>
+                    <div className='p-3' >
+                        <Outlet></Outlet>
+                    </div>
                 </div>
             </div>
 
