@@ -58,12 +58,12 @@ const TutorProfile = () => {
             {/* Right Section - Tabs and Content */}
             <div className=" w-full">
                 {/* Tabs */}
-                <div className="flex space-x-4 bg-blue-50 p-2 rounded-lg shadow-md">
+                <div className="flex space-x-2 bg-blue-50 p-2 rounded-lg shadow-md">
                     {tabs.map((tab) => (
                         <button
                             key={tab.name}
                             onClick={() => setActiveTab(tab.name)}
-                            className={`px-1 py-3 flex items-center gap-3 rounded-lg transition-all duration-300 ${activeTab === tab.name
+                            className={`px-3 py-3 flex items-center gap-3 rounded-lg transition-all duration-300 ${activeTab === tab.name
                                 ? "bg-gradient-to-r from-[#07569E] to-[#0093DD] text-white"
                                 : "bg-white shadow text-[#64A8E8]"
                                 }`}
@@ -71,8 +71,8 @@ const TutorProfile = () => {
                             <div className="w-8 h-8 flex justify-center items-center">
                                 {tab.icon}
                             </div>
-                            <div className="text-left">
-                                <span className="font-semibold block">{tab.name}</span>
+                            <div className="text-center">
+                                <span className="font-semibold text-sm block">{tab.name}</span>
                                 <span className="text-xs text-[#656A7B]">{tab.key}</span>
                             </div>
                         </button>
