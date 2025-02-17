@@ -208,7 +208,9 @@ const AvailabilityInformation = () => {
                 </div>
             </div>
 
-
+            <div className=" flex justify-end " >
+                <button className="bg-[#64A8E8] py-2 rounded-xl px-5 text-white " >Update All Information</button>
+            </div>
 
         </div>
     );

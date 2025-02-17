@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaLock, FaPhone, FaPhoneAlt, FaUser } from 'react-icons/fa';
 import { MdEmail, MdVerified } from 'react-icons/md';
 import AvailabilityInformation from '../../../components/tutor/AvailabilityInformation';
+import EducatonInfo from '../../../components/tutor/EducatonInfo';
 
 const tabs = [
     { name: "Tuition Related", icon: <FaUser />, key: "Information" },
@@ -68,7 +69,7 @@ const TutorProfile = () => {
                                 : "bg-white shadow text-[#64A8E8]"
                                 }`}
                         >
-                            <div className="w-8 h-8 flex justify-center items-center">
+                            <div className="w-4 h-4 flex justify-center items-center">
                                 {tab.icon}
                             </div>
                             <div className="text-center">
@@ -82,12 +83,14 @@ const TutorProfile = () => {
                 {/* Tab Content Section */}
                 <div className="mt-6 p-6 bg-[#F1F8FF] rounded-lg shadow-md">
                     {activeTab === "Tuition Related" && <AvailabilityInformation />}
-                    {activeTab === "Education Related" && <h1 className="text-lg font-semibold">Education Info Coming Soon</h1>}
+                    {activeTab === "Education Related" && <EducatonInfo></EducatonInfo> }
                     {activeTab === "Personal Related" && <h1 className="text-lg font-semibold">Personal Info Coming Soon</h1>}
                     {activeTab === "Credential Related" && <h1 className="text-lg font-semibold">Credential Info Coming Soon</h1>}
                 </div>
-                
+
             </div>
+
+
         </div>
     );
 }
