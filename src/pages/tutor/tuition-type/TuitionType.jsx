@@ -37,7 +37,7 @@ export default function TuitionType() {
 
     return (
         <div className="flex lg:flex-row " >
-            <div className=" h-[80vh] overflow-y-scroll " >
+            <div className="  " >
                 {/* Search by Date Section */}
                 <div className="w-full max-w-sm my-3 p-4 bg-blue-50 rounded-lg shadow-md">
                     <div

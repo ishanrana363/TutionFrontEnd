@@ -11,7 +11,7 @@ const ProfileLayout = () => {
       </div>
 
       {/* Right Side - Expands Freely & Contains Outlet */}
-      <div className="flex-1 bg-[#F1F8FF] ">
+      <div className="flex-1 bg-[#F1F8FF]  ">
         <GurdianProfileRightSide />
         <Outlet />  {/* ✅ Now inside the right section */}
       </div>

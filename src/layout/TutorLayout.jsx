@@ -5,19 +5,21 @@ import { Outlet } from 'react-router-dom';
 
 const TutorLayout = () => {
     return (
-        <div>
-            <div><TutorNavbar></TutorNavbar></div>
-            <div className='flex flex-row ' >
-                <div className='w-[20%]  '  >
-                    <TutorSidebar></TutorSidebar>
+        <div className="h-screen flex flex-col">
+            {/* Navbar (Stays at the Top) */}
+            <TutorNavbar />
+
+            <div className="flex flex-grow">
+                {/* Fixed Sidebar */}
+                <div className="w-[20%] fixed h-screen overflow-hidden mt-14 bg-white shadow-lg">
+                    <TutorSidebar />
                 </div>
-                <div className='w-[84%]' >
-                    <div className='p-3' >
-                        <Outlet></Outlet>
-                    </div>
+
+                {/* Dynamic Content Section */}
+                <div className="w-[80%] ml-[20%] p-3 overflow-auto h-screen mt-14 ">
+                    <Outlet />
                 </div>
             </div>
-
         </div>
     );
 };
