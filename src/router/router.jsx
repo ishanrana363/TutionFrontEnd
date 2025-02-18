@@ -20,8 +20,20 @@ import TutorProfile from "../pages/tutor/tutor-profile/TutorProfile";
 import PaymentPage from "../pages/tutor/payment/PaymentPage";
 import TutorNoticePage from "../pages/tutor/tutor-notice/TutorNoticePage";
 import TutorSettingPage from "../pages/tutor/tutor-setting/TutorSettingPage";
+import HomeLayout from "../layout/HomeLayout";
+import HomePages from "../pages/home-page/HomePages";
 
 export const router = createBrowserRouter([
+    {
+        path : "/",
+        element : <HomeLayout></HomeLayout>,
+        children : [
+            {
+                path :"",
+                element : <HomePages></HomePages>
+            }
+        ]
+    },
     {
         path: "/tutor-dashboard",
         element: <TutorLayout></TutorLayout>,

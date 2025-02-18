@@ -10,35 +10,35 @@ const TutorHome = () => {
                         <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1739628446/Frame_7_a2dlye.png" alt="" />
                     </div>
                     <p className="mt-2 text-xl font-bold text-black">00</p>
-                    <p className="text-[#64A8E8] text-[20px] font-semibold ">Applied Jobs</p>
+                    <p className="text-[#64A8E8]  font-semibold ">Applied Jobs</p>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 bg-white shadow-lg rounded-xl w-44">
                     <div className="relative flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full">
                         <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1739628446/Frame_7_a2dlye.png" alt="" />
                     </div>
                     <p className="mt-2 text-xl font-bold text-black">00</p>
-                    <p className="text-[#64A8E8] text-[20px] font-semibold ">Shortlisted jobs</p>
+                    <p className="text-[#64A8E8]  font-semibold ">Shortlisted jobs</p>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 bg-white shadow-lg rounded-xl w-44">
                     <div className="relative flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full">
                         <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1739629362/Frame_11_ct9ofz.png" alt="" />
                     </div>
                     <p className="mt-2 text-xl font-bold text-black">00</p>
-                    <p className="text-[#64A8E8] text-[20px] font-semibold ">Appointed Jobs</p>
+                    <p className="text-[#64A8E8]  font-semibold ">Appointed Jobs</p>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 bg-white shadow-lg rounded-xl w-44">
                     <div className="relative flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full">
                         <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1739629304/Frame_10_nlnr7e.png" alt="" />
                     </div>
                     <p className="mt-2 text-xl font-bold text-black">00</p>
-                    <p className="text-[#64A8E8] text-[20px] font-semibold ">Confirmed Jobs</p>
+                    <p className="text-[#64A8E8]  font-semibold ">Confirmed Jobs</p>
                 </div>
                 <div className="flex flex-col items-center justify-center p-4 bg-white shadow-lg rounded-xl w-44">
                     <div className="relative flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full">
                         <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1739629259/Frame_9_jfwumv.png" alt="" />
                     </div>
                     <p className="mt-2 text-xl font-bold text-black">00</p>
-                    <p className="text-[#64A8E8] text-[20px] font-semibold ">Cancel Jobs</p>
+                    <p className="text-[#64A8E8]  font-semibold ">Cancel Jobs</p>
                 </div>
             </div>
             <div className="my-10" >
