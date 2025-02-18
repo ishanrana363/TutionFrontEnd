@@ -17,6 +17,7 @@ import Setting from "../pages/gurdian/setting-page/Setting";
 import TutorHome from "../pages/tutor/TutorHome";
 import TuitionType from "../pages/tutor/tuition-type/TuitionType";
 import TutorProfile from "../pages/tutor/tutor-profile/TutorProfile";
+import PaymentPage from "../pages/tutor/payment/PaymentPage";
 
 export const router = createBrowserRouter([
     {
@@ -37,7 +38,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "payment",
-                element: <div>Payment</div>
+                element: <PaymentPage></PaymentPage>
             },
             {
                 path: "notice",
