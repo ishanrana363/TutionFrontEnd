@@ -5,6 +5,7 @@ import Name from '../../../components/tutor/setting/Name';
 import PhoneNumber from '../../../components/tutor/setting/PhoneNumber';
 import PasswordUpdate from '../../../components/tutor/setting/PasswordUpdate';
 import Verification from '../../../components/tutor/setting/Verification';
+import EditProfile from '../../../components/tutor/setting/EditProfile';
 
 const TutorSettingPage = () => {
     const [activeTab, setActiveTab] = useState("name");
@@ -45,6 +46,7 @@ const TutorSettingPage = () => {
                     {activeTab === "number" &&  <PhoneNumber></PhoneNumber> }
                     {activeTab === "password" &&  <PasswordUpdate></PasswordUpdate> }
                     {activeTab === "verification" &&  <Verification></Verification> }
+                    {activeTab === "profile Lock" &&  <EditProfile></EditProfile> }
                 </div>
             </div>
         </div>
