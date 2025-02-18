@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaLock, FaPassport, FaPhone, FaUser } from 'react-icons/fa';
 import { MdPortableWifiOff, MdVerified } from 'react-icons/md';
 import Name from '../../../components/tutor/setting/Name';
+import PhoneNumber from '../../../components/tutor/setting/PhoneNumber';
 
 const TutorSettingPage = () => {
     const [activeTab, setActiveTab] = useState("name");
@@ -21,7 +22,7 @@ const TutorSettingPage = () => {
                     <button
                         key={tab.name}
                         onClick={() => setActiveTab(tab.key)}
-                        className={`px-12 py-3 flex items-center gap-3 rounded-lg transition-all duration-300 ${activeTab === tab.name
+                        className={`px-12 py-3 flex items-center gap-3 rounded-lg transition-all duration-300 ${activeTab === tab.key
                             ? "bg-gradient-to-r from-[#07569E] to-[#0093DD] text-white"
                             : "bg-white shadow text-[#64A8E8]"
                             }`}
@@ -39,6 +40,7 @@ const TutorSettingPage = () => {
             <div>
                 <div className="mt-6 p-6 bg-[#F1F8FF] rounded-lg shadow-md">
                     {activeTab === "name" &&  <Name></Name> }
+                    {activeTab === "number" &&  <PhoneNumber></PhoneNumber> }
                 </div>
             </div>
         </div>
