@@ -1,6 +1,7 @@
 import Banner from './Banner'
 import Category from './Category'
 import Count from './Count'
+import Find from './Find';
 import Slider from './Slider'
 import WhyChooseUs from './WhyChooseUs';
 
@@ -15,6 +16,9 @@ const HomePages = () => {
       </div>
       <div>
         <WhyChooseUs/>
+      </div>
+      <div>
+        <Find></Find>
       </div>
     </div>
   )
