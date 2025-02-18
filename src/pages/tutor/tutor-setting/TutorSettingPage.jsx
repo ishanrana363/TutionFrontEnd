@@ -3,6 +3,7 @@ import { FaLock, FaPassport, FaPhone, FaUser } from 'react-icons/fa';
 import { MdPortableWifiOff, MdVerified } from 'react-icons/md';
 import Name from '../../../components/tutor/setting/Name';
 import PhoneNumber from '../../../components/tutor/setting/PhoneNumber';
+import PasswordUpdate from '../../../components/tutor/setting/PasswordUpdate';
 
 const TutorSettingPage = () => {
     const [activeTab, setActiveTab] = useState("name");
@@ -41,6 +42,7 @@ const TutorSettingPage = () => {
                 <div className="mt-6 p-6 bg-[#F1F8FF] rounded-lg shadow-md">
                     {activeTab === "name" &&  <Name></Name> }
                     {activeTab === "number" &&  <PhoneNumber></PhoneNumber> }
+                    {activeTab === "password" &&  <PasswordUpdate></PasswordUpdate> }
                 </div>
             </div>
         </div>
