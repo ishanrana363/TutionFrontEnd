@@ -4,6 +4,7 @@ import { MdEmail, MdVerified } from 'react-icons/md';
 import AvailabilityInformation from '../../../components/tutor/AvailabilityInformation';
 import EducatonInfo from '../../../components/tutor/EducatonInfo';
 import PersonalInfo from '../../../components/tutor/PersonalInfo';
+import Credential from './../../../components/tutor/Credential';
 
 const tabs = [
     { name: "Tuition Related", icon: <FaUser />, key: "Information" },
@@ -86,7 +87,7 @@ const TutorProfile = () => {
                     {activeTab === "Tuition Related" && <AvailabilityInformation />}
                     {activeTab === "Education Related" && <EducatonInfo></EducatonInfo> }
                     {activeTab === "Personal Related" && <PersonalInfo></PersonalInfo>  }
-                    {activeTab === "Credential Related" && <h1 className="text-lg font-semibold">Credential Info Coming Soon</h1>}
+                    {activeTab === "Credential Related" && <Credential></Credential>  }
                 </div>
 
             </div>
