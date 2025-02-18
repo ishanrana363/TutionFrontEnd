@@ -18,6 +18,8 @@ import TutorHome from "../pages/tutor/TutorHome";
 import TuitionType from "../pages/tutor/tuition-type/TuitionType";
 import TutorProfile from "../pages/tutor/tutor-profile/TutorProfile";
 import PaymentPage from "../pages/tutor/payment/PaymentPage";
+import TutorNoticePage from "../pages/tutor/tutor-notice/TutorNoticePage";
+import TutorSettingPage from "../pages/tutor/tutor-setting/TutorSettingPage";
 
 export const router = createBrowserRouter([
     {
@@ -42,11 +44,11 @@ export const router = createBrowserRouter([
             },
             {
                 path: "notice",
-                element: <div>notice</div>
+                element: <TutorNoticePage></TutorNoticePage>
             },
             {
                 path: "setting",
-                element: <div>Setting</div>
+                element: <TutorSettingPage></TutorSettingPage>
             }
         ]
     },
