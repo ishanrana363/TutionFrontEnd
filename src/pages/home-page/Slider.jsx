@@ -27,11 +27,11 @@ export default function Carousel() {
     }, []);
 
     return (
-        <div className="relative w-full py-6 flex flex-col items-center justify-center">
+        <div className="relative  py-6 flex flex-col items-center justify-center">
             <button onClick={prevSlide} className="absolute left-[10%] p-2 bg-white shadow-md rounded-full">
                 <FaChevronLeft size={20} />
             </button>
-            <div className="flex overflow-hidden w-[80%] justify-center">
+            <div className="flex overflow-hidden  justify-center">
                 {data.map((item, index) => (
                     <div
                         key={item.id}
