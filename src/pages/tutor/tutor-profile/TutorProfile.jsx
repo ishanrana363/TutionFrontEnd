@@ -3,6 +3,7 @@ import { FaLock, FaPhone, FaPhoneAlt, FaUser } from 'react-icons/fa';
 import { MdEmail, MdVerified } from 'react-icons/md';
 import AvailabilityInformation from '../../../components/tutor/AvailabilityInformation';
 import EducatonInfo from '../../../components/tutor/EducatonInfo';
+import PersonalInfo from '../../../components/tutor/PersonalInfo';
 
 const tabs = [
     { name: "Tuition Related", icon: <FaUser />, key: "Information" },
@@ -84,7 +85,7 @@ const TutorProfile = () => {
                 <div className="mt-6 p-6 bg-[#F1F8FF] rounded-lg shadow-md">
                     {activeTab === "Tuition Related" && <AvailabilityInformation />}
                     {activeTab === "Education Related" && <EducatonInfo></EducatonInfo> }
-                    {activeTab === "Personal Related" && <h1 className="text-lg font-semibold">Personal Info Coming Soon</h1>}
+                    {activeTab === "Personal Related" && <PersonalInfo></PersonalInfo>  }
                     {activeTab === "Credential Related" && <h1 className="text-lg font-semibold">Credential Info Coming Soon</h1>}
                 </div>
 
