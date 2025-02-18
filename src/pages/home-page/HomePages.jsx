@@ -3,6 +3,7 @@ import Category from './Category'
 import Count from './Count'
 import Find from './Find';
 import Slider from './Slider'
+import TestimonialCarousel from './TestimonialCarousel';
 import WhyChooseUs from './WhyChooseUs';
 
 const HomePages = () => {
@@ -19,6 +20,8 @@ const HomePages = () => {
       </div>
       <div>
         <Find></Find>
+      </div><div>
+        <TestimonialCarousel></TestimonialCarousel>
       </div>
     </div>
   )
