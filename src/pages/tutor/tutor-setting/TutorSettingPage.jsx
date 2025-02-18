@@ -4,6 +4,7 @@ import { MdPortableWifiOff, MdVerified } from 'react-icons/md';
 import Name from '../../../components/tutor/setting/Name';
 import PhoneNumber from '../../../components/tutor/setting/PhoneNumber';
 import PasswordUpdate from '../../../components/tutor/setting/PasswordUpdate';
+import Verification from '../../../components/tutor/setting/Verification';
 
 const TutorSettingPage = () => {
     const [activeTab, setActiveTab] = useState("name");
@@ -43,6 +44,7 @@ const TutorSettingPage = () => {
                     {activeTab === "name" &&  <Name></Name> }
                     {activeTab === "number" &&  <PhoneNumber></PhoneNumber> }
                     {activeTab === "password" &&  <PasswordUpdate></PasswordUpdate> }
+                    {activeTab === "verification" &&  <Verification></Verification> }
                 </div>
             </div>
         </div>
