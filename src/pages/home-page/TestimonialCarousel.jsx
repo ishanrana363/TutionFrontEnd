@@ -35,11 +35,11 @@ const TestimonialCarousel = () => {
 
     return (
         <>
-            <div className='bg-[#64A8E8] h-64 text-center py-8'>
+            <div className='bg-[#64A8E8] h-64 text-center my-10 py-8'>
                 <h2 className="text-4xl md:text-3xl font-bold text-white mt-2">What Our Students Are Saying</h2>
                 <div className='border mt-7 mb-8 max-w-[60%] mx-auto border-white border-dotted'></div>
             </div>
-            <div className='w-[90%] mx-auto -mt-32'>
+            <div className='w-[90%] bg-white py-9 shadow rounded-2xl mx-auto -mt-40'>
                 <div className="flex justify-center items-center space-x-4">
                     <button className="p-2 bg-white rounded-full shadow" onClick={prevSlide}><FaArrowLeft /></button>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
