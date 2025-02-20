@@ -22,6 +22,7 @@ import TutorNoticePage from "../pages/tutor/tutor-notice/TutorNoticePage";
 import TutorSettingPage from "../pages/tutor/tutor-setting/TutorSettingPage";
 import HomeLayout from "../layout/HomeLayout";
 import HomePages from "../pages/home-page/HomePages";
+import StudentTeacher from "../pages/home-page/loging-related-page/StudentTeacher";
 
 export const router = createBrowserRouter([
     {
@@ -124,5 +125,9 @@ export const router = createBrowserRouter([
                 element: <TeacherTable></TeacherTable>
             }
         ]
+    },
+    {
+        path:"/become-tutor",
+        element : <StudentTeacher></StudentTeacher>
     }
 ])
