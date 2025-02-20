@@ -23,6 +23,7 @@ import HomeLayout from "../layout/HomeLayout";
 import HomePages from "../pages/home-page/HomePages";
 import StudentTeacher from "../pages/home-page/loging-related-page/StudentTeacher";
 import LoginPage from "../pages/home-page/loging-related-page/LoginPage";
+import SignupForm from "../pages/home-page/loging-related-page/SignupForm";
 
 export const router = createBrowserRouter([
     {
@@ -133,5 +134,9 @@ export const router = createBrowserRouter([
     {
         path : "/sign-in",
         element : <LoginPage></LoginPage>
+    },
+    {
+        path:"/student",
+        element : <SignupForm></SignupForm>
     }
 ])
