@@ -13,7 +13,7 @@ const HomeNavbar = () => {
             <nav>
               <ul className='flex items-center gap-6  ' >
                 <li> <Link className=' text-[#2F3A4D] font-semibold ' to={"/job-board"}>Job Board</Link> </li>
-                <li> <Link className=' text-[#2F3A4D] font-semibold ' to={"/Sign in"}>Sign in</Link> </li>
+                <li> <Link className=' text-[#2F3A4D] font-semibold ' to={"/sign-in"}>Sign in</Link> </li>
                 <li> <Link to={"/become-tutor"}> <button className=' bg-[#64A8E8] px-4 py-1.5 text-white shadow rounded-md ' >Become A Tutor </button> </Link> </li>
               </ul>
             </nav>

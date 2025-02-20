@@ -7,7 +7,6 @@ import JobRequest from './../pages/super-admin/JobRequest';
 import TeacherTable from "../pages/super-admin/TeacherTable";
 import HomePage from "../pages/gurdian/HomePage";
 import TutorFrom from "../pages/gurdian/TutorFrom";
-import GurdianProfile from "../pages/gurdian/gurdian-profile-page/GurdianProfile";
 import ProfileLayout from "../layout/ProfileLayout";
 import ContactInformation from "../pages/gurdian/gurdian-profile-page/ContactInformation";
 import AdditionalDetails from "../pages/gurdian/gurdian-profile-page/AdditionalDetails";
@@ -23,6 +22,7 @@ import TutorSettingPage from "../pages/tutor/tutor-setting/TutorSettingPage";
 import HomeLayout from "../layout/HomeLayout";
 import HomePages from "../pages/home-page/HomePages";
 import StudentTeacher from "../pages/home-page/loging-related-page/StudentTeacher";
+import LoginPage from "../pages/home-page/loging-related-page/LoginPage";
 
 export const router = createBrowserRouter([
     {
@@ -129,5 +129,9 @@ export const router = createBrowserRouter([
     {
         path:"/become-tutor",
         element : <StudentTeacher></StudentTeacher>
+    },
+    {
+        path : "/sign-in",
+        element : <LoginPage></LoginPage>
     }
 ])
